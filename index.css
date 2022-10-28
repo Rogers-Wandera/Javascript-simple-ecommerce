@@ -1,0 +1,131 @@
+body {
+    background-color: #f8f9fd;
+    margin: 0;
+    padding: 0;
+}
+
+.product-wrap {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    text-align: center;
+    margin: 2rem auto 2rem auto;
+}
+
+.product-wrap .product-cont {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    background-color: #fff;
+}
+
+.product-cont h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.product-cont img {
+    margin: 0 auto 0 auto;
+}
+
+.product-cont .mid-sec {
+    display: block;
+    text-align: left;
+}
+
+.product-cont .mid-sec small{
+    width: 100%;
+    color: blue;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.product-cont p {
+    text-align: left;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+.product-cont .mid-sec span {
+    float: right;
+    color: brown;
+}
+
+.product-cont .mid-sec button {
+    width: 50%;
+    margin: 0.5rem 0;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+.product-cont .mid-sec button:hover {
+    background-color: lightblue;
+}
+
+.cartItems {
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    width: 50%;
+    top: 2rem;
+    right: 10rem;
+    align-items: center;
+    overflow: auto;
+
+}
+.cartItems .cartData {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.cartItems h6 {
+    margin: 2rem 0 0.5rem 2rem;
+    font-size: 1rem;
+}
+
+.cartItems img {
+    width: 30%;
+    margin: 0.5rem 0 0.5rem 2rem;
+}
+
+.cartItems span {
+    margin: 0.5rem 0 0.5rem 2rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cartItems small {
+    color: blue;
+    font-size: 1rem;
+    margin: 0.5rem 0 0.5rem 2rem;
+}
+.cartItems p {
+    color: black;
+    font-size: 1rem;
+    margin: 0.5rem 0 0.5rem 2rem;
+}
+
+.model .btn-cart {
+    padding: 15px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .product-wrap {
+        grid-template-columns: auto auto;
+    }
+    .product-wrap .product-cont {
+        width: 100%;
+    }
+}
